@@ -43,7 +43,14 @@ void SimplexForLogistics::ChangePage(int index)
         if (tableItems.size() == 0)
             return;
         ReadTable();
-        ui.stackedWidget->setCurrentIndex(2);
+        if (conditionals.size() == 0)
+        {
+            GenerateConditionals();
+            //ui.stackedWidget_2->setCurrentIndex(1);
+        }
+        else {
+            ui.stackedWidget->setCurrentIndex(2);
+        }
     }
     else {
         meansPerProduct.clear();
@@ -145,4 +152,31 @@ bool SimplexForLogistics::ReadTable()
     }
     
     return true;
+}
+
+void SimplexForLogistics::GenerateConditionals() 
+{
+    const int noProds = productNames.size();
+    ui.conditionals->setRowCount(noProds + 1);
+    ui.conditionals->setColumnCount(3);
+
+    conditionalItems.push_back(new QLabel("Produkt"));
+    ui.conditionals->setCellWidget(0, 0, conditionalItems.back());
+
+    conditionalItems.push_back(new QLabel("<= / >="));
+    ui.conditionals->setCellWidget(0, 1, conditionalItems.back());
+
+    conditionalItems.push_back(new QLabel("Liczba"));
+    ui.conditionals->setCellWidget(0, 2, conditionalItems.back());
+
+    for (int i = 0; i < noProds; i++)
+    {
+        conditionalItems.push_back(new QLabel(productNames[i]));
+        ui.conditionals->setCellWidget(i+1, 0, conditionalItems.back());
+        for (int j = 0; j < 2; j++)
+        {
+            conditionalItems.push_back(new QLineEdit(""));
+            ui.conditionals->setCellWidget(i+1, j+1, conditionalItems.back());
+        }
+    }
 }

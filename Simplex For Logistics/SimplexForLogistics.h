@@ -28,11 +28,14 @@ private:
     std::vector<int> meansPerProduct;
     std::vector<int> profits;
     std::vector<int> limits;
+    std::vector<int> conditionals;
     std::vector<QString> productNames;
     std::vector<QString> meansNames;
     std::vector<QWidget*> tableItems;
+    std::vector<QWidget*> conditionalItems;
 
 private:
     void GenerateTable();
     bool ReadTable();
+    void GenerateConditionals();
 };
