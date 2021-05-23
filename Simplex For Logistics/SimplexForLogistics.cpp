@@ -4,7 +4,7 @@ SimplexForLogistics::SimplexForLogistics(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
-    
+
     pageMapper = new QSignalMapper(this);
     pageMapper->setMapping(ui.generate_input, 0);
     pageMapper->setMapping(ui.generate_output, 1);
