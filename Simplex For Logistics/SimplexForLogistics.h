@@ -33,7 +33,7 @@ public:
 
 public slots:
     void ChangePage(int index);
-
+    
 private:
     Ui::SimplexForLogisticsClass ui;
     QSignalMapper* pageMapper;
