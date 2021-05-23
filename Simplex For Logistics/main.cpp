@@ -1,4 +1,3 @@
-
 #include "SimplexForLogistics.h"
 #include <QtWidgets/QApplication>
 

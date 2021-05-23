@@ -102,7 +102,57 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="output"/>
+    <widget class="QWidget" name="output">
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Funkcja celu:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="f_celu">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>0</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="output_table">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>431</width>
+        <height>101</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="success_picture">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>431</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
    <widget class="QPushButton" name="generate_output">
     <property name="geometry">
@@ -114,7 +164,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Generuj szekle</string>
+     <string>Do wyniku</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="no_products">
@@ -175,6 +225,19 @@
      </widget>
     </widget>
     <widget class="QWidget" name="page_2"/>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>380</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Switala&amp; Widziszewski</string>
+    </property>
    </widget>
   </widget>
  </widget>
