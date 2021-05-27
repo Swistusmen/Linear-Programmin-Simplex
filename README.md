@@ -6,6 +6,12 @@
 Project created for study class - operational and logistical algorithms. Created within 1 day. Helps to plan means per product spent, when number of means is limited and our goal is to maximize profit.
 For resolving this issue we use Simplex Algorihtm (which is not implemented by myself)
 
+Because of the speed, there are some bugs/ not great solutions you need to be aware:
+-reset doesn't work for all the cases
+-changing windows- doesn't work perfect
+-as input, program takes integers, so in case you would like to have floats, multiply everything by 10^n
+-not all output is catch by the GUI- as it was tested only for x1 and x2, however always you can check the output of a console
+
 <h2> Stack <h2>
 
 -Qt 5.15.2
